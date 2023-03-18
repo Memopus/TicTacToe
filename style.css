@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+body > h1 {
+  color: white;
+}
+
+i {
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.game {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.turn {
+  height: 75px;
+  background-color: white;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game .game-box {
+  border: 2px solid white;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-box:hover {
+  box-shadow: -3px -1px 29px 6px rgba(255, 255, 255, 0.4);
+}
+
+.win {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.win button {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.6em;
+  width: 150px;
+  background-color: white;
+  color: #060006;
+  border: 2px solid black;
+}
+
+.win button:hover {
+  transition: 0.3s;
+  background-color: #060006;
+  color: #fff;
+  border: 2px solid black;
+}
+
+.win p {
+  font-size: larger;
+  font-weight: bold;
+}
